@@ -18,6 +18,7 @@ export function Button({
   borderClassName,
   duration,
   className,
+size='large',
   ...otherProps
 }: {
   borderRadius?: string;
@@ -27,12 +28,27 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
+  size?:'small'|'meddium'|'large';
   [key: string]: any;
 }) {
+
+  let sizeFactor={small:{
+    componentHeight:'h-6',
+    buttonHeight:'h-6',
+  },
+  meddium:{
+    componentHeight:'h-10',
+    buttonHeight:'h-10',
+  },
+  large:{
+    componentHeight:'h-14',
+    buttonHeight:'h-14',
+  }
+}
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
+        `bg-transparent relative text-xl  ${sizeFactor[size].componentHeight} w-40 p-[1px] overflow-hidden `,
         containerClassName
       )}
       style={{
@@ -56,7 +72,7 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          `relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full ${sizeFactor[size].buttonHeight}  text-sm antialiased`,
           className
         )}
         style={{
