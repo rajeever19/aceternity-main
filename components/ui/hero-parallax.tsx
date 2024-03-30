@@ -127,6 +127,7 @@ export const ProductCard = ({
   };
   translate: MotionValue<number>;
 }) => {
+  console.log('product', product.thumbnail)
   return (
     <motion.div
       style={{
@@ -143,7 +144,8 @@ export const ProductCard = ({
         className="block group-hover/product:shadow-2xl "
       >
         <Image
-          src='/public/images'
+           unoptimized
+          src={product.thumbnail}
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-full w-full inset-0"

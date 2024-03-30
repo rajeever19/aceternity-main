@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "../ui/hero-parallax";
+import {Chillinq,Ecoseed} from '../../public/images/index.js'
 
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
@@ -9,14 +10,12 @@ export const products = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
-    thumbnail:
-      "public/images/Chillinq.png",
+    thumbnail: Chillinq
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    thumbnail:Ecoseed,
   },
   {
     title: "Rogue",
@@ -25,12 +24,12 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/rogue.png",
   },
 
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "public/images/Ecoseed.png",
-  },
+  // {
+  //   title: "Editorially",
+  //   link: "https://editorially.org",
+  //   thumbnail:
+  //     "public/images/Ecoseed.png",
+  // },
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
