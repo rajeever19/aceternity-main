@@ -55,7 +55,7 @@ const items = [
     
   },
   {
-    title: "The Joy of Creation",
+    title: "Travelling thr",
     description: "Experience the thrill of bringing ideas to life.",
     header: <Skeleton />,
     

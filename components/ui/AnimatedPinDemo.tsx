@@ -15,7 +15,7 @@ export function AnimatedPinDemo() {
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
+            I was invited as a design mentor at the Arweave India Hackathon in Bengaluru city. My main responsibilities were mentoring emerging talents in the Arweave blockchain on design fundamentals and helping bridge the gap between developers' and designers' workflows.
             </span>
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
@@ -31,8 +31,7 @@ export function AnimatedPinDemo() {
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
+          I gave a speech on frontend development fundamentals at the FastN frontend workshop, alongside the Developer Relations team at FastN.            </span>
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
         </div>
